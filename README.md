@@ -1,7 +1,10 @@
-# Minimal Electron + React + TypeScript boilerplate
+# Electron + React + TypeScript quick start
 
-I include "minimal" in the title because this boilerplate does not use `create-react-app`. Read more about `create-react-app` [here](https://create-react-app.dev/).
+Quick start for building new projects with Electron + React + TypeScript.
 
-## List of project dependencies
+## Getting Started
 
-    -
+```bash
+yarn
+yarn start
+```
