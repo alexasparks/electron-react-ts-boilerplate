@@ -16,9 +16,6 @@
         },
         "ecmaVersion": "latest"
     },
-    "plugins": [
-        "react",
-        "@typescript-eslint"
-    ],
+    "plugins": ["react", "@typescript-eslint"],
     "ignorePatterns": "webpack.config.js"
 }

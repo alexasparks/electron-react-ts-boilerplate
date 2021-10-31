@@ -1,43 +1,47 @@
 {
-  "name": "electron-react-boilerplate",
-  "version": "1.0.0",
-  "description": "Boilerplate for Electron + React + TypeScript",
-  "main": "dist/main/index.js",
-  "scripts": {
-    "build": "tsc && webpack",
-    "start": "npm run build && electron .",
-    "pack:app": "npm run build && electron-builder --dir",
-    "dist": "electron-builder"
-  },
-  "build": {
-    "appId": "your.id",
-    "mac": {
-      "category": "your.app.category.type"
+    "name": "electron-react-boilerplate",
+    "version": "1.0.0",
+    "description": "Boilerplate for Electron + React + TypeScript",
+    "main": "dist/main/index.js",
+    "scripts": {
+        "build": "tsc && webpack",
+        "start": "npm run build && electron .",
+        "pack:app": "npm run build && electron-builder --dir",
+        "dist": "npm run build && electron-builder"
     },
-    "files":  ["./dist/**/*", "./public/**/*"]
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "@types/react": "^17.0.33",
-    "@types/react-dom": "^17.0.10",
-    "@typescript-eslint/eslint-plugin": "^5.2.0",
-    "@typescript-eslint/parser": "^5.2.0",
-    "electron": "^15.3.0",
-    "electron-builder": "^22.13.1",
-    "eslint": "^8.1.0",
-    "eslint-plugin-react": "^7.26.1",
-    "ts-loader": "^9.2.6",
-    "typescript": "^4.4.4",
-    "webpack": "^5.61.0",
-    "webpack-cli": "^4.9.1"
-  },
-  "engines": {
-    "node": "^14.18.1"
-  }
+    "build": {
+        "appId": "your.id",
+        "mac": {
+            "category": "your.app.category.type"
+        },
+        "files": [
+            "./dist/**/*",
+            "./public/**/*"
+        ]
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.33",
+        "@types/react-dom": "^17.0.10",
+        "@typescript-eslint/eslint-plugin": "^5.2.0",
+        "@typescript-eslint/parser": "^5.2.0",
+        "electron": "^15.3.0",
+        "electron-builder": "^22.13.1",
+        "eslint": "^8.1.0",
+        "eslint-plugin-react": "^7.26.1",
+        "prettier": "2.4.1",
+        "ts-loader": "^9.2.6",
+        "typescript": "^4.4.4",
+        "webpack": "^5.61.0",
+        "webpack-cli": "^4.9.1"
+    },
+    "engines": {
+        "node": "^14.18.1"
+    }
 }

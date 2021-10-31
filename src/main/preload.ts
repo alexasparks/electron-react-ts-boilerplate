@@ -1,8 +1,5 @@
-import { contextBridge, ipcRenderer } from "electron";
+import { contextBridge, ipcRenderer } from 'electron';
 
-contextBridge.exposeInMainWorld(
-    'electron',
-    {
-        sendHelloWorldEvent: () => ipcRenderer.send('hello-world')
-    }
-)
+contextBridge.exposeInMainWorld('electron', {
+    sendHelloWorldEvent: () => ipcRenderer.send('hello-world'),
+});
