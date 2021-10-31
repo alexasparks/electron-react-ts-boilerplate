@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "sourceMap": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "outDir": "dist/main"
+    },
+    "exclude": ["node_modules", "*.js"],
+    "include": ["src/main"]
+}
