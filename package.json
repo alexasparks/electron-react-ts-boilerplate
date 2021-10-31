@@ -5,7 +5,16 @@
   "main": "dist/main/index.js",
   "scripts": {
     "build": "tsc && webpack",
-    "start": "npm run build && electron ."
+    "start": "npm run build && electron .",
+    "pack:app": "npm run build && electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "your.id",
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "files":  ["./dist/**/*", "./public/**/*"]
   },
   "keywords": [],
   "author": "",
@@ -20,6 +29,7 @@
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
     "electron": "^15.3.0",
+    "electron-builder": "^22.13.1",
     "eslint": "^8.1.0",
     "eslint-plugin-react": "^7.26.1",
     "ts-loader": "^9.2.6",
